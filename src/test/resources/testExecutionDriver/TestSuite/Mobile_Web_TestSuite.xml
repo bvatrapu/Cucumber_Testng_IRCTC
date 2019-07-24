@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke Suite" parallel="tests" thread-count="10" verbose="1">
+    <!-- PROD, QA1 -->
+    <parameter name="environment" value="QA2"/>
+    <!-- DESKTOP, MOBILE -->
+    <parameter name="platform" value="MOBILE"/>
+    <!-- WEB, HEADLESS, APP, API -->
+    <parameter name="service" value="WEB"/>
+    <!-- cloud, local -->
+    <parameter name="network" value="local"/>
+    <!--    -->
+    <parameter name="mobileDevice" value="Honor"/>
+
+    <parameter name="banner" value="safeway"/>
+<!--    <listeners>-->
+<!--        <listener class-name="com.Albertsons.listeners.TestListener"/>-->
+<!--    </listeners>-->
+
+    <test name="Test-1">
+        <classes>
+            <!-- SignIn Suite -->
+            <!--<class name="com.Albertsons.cucumber.runner.desktop.HomeFeatureRunner" />-->
+            <class name="com.IRCTC.cucumber.runner.desktop.HomeFeatureRunner" />
+        </classes>
+    </test>
+</suite>
+

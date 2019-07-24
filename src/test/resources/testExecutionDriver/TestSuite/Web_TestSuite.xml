@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Suite" parallel="tests" thread-count="10" verbose="1">
+    <!-- PROD, QA1 -->
+    <parameter name="environment" value="Prod"/>
+    <!-- DESKTOP, MOBILE -->
+    <parameter name="platform" value="DESKTOP"/>
+    <!-- WEB, HEADLESS, APP, API -->
+    <parameter name="service" value="WEB"/>
+    <!--  Chrome or incognito, Firefox/ff, Safari,  IE/Internet Explorer/IE11 EDGE -->
+    <parameter name="browser" value="incognito"/>
+
+    <!--<parameter name="banner" value="safeway"/>-->
+    <!--<listeners>-->
+        <!--<listener class-name="com.Albertsons.listeners.TestListener"/>-->
+    <!--</listeners>-->
+
+    <test name="Test-1">
+        <classes>
+            <!-- SignIn Suite -->
+            <!--<class name="com.Albertsons.cucumber.runner.desktop.HomeFeatureRunner" />-->
+            <class name="com.IRCTC.cucumber.runner.desktop.HomeFeatureRunner" />
+        </classes>
+    </test>
+
+
+    <!--<test name="Test-2">-->
+        <!--<parameter name="browser" value="Firefox"/>-->
+        <!--<classes>-->
+            <!--&lt;!&ndash; SignIn Suite &ndash;&gt;-->
+            <!--<class name="com.AlbertsonsProjectroject.cucumber.runner.desktop.HomeScreenFeatureRunner" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+</suite>
+
